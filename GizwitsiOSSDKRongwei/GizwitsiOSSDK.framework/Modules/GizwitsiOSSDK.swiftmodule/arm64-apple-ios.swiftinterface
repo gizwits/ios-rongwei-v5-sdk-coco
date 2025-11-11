@@ -1585,6 +1585,18 @@ public struct GizBindDeviceResultInfo : GizwitsiOSSDK.GizOpenApiResultInfo, Swif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct GizQingKeConfigInfoResultInfo : GizwitsiOSSDK.GizOpenApiResultInfo, Swift.Codable {
+  public var bindCode: Swift.String
+  public var activationUrl: Swift.String
+  public var userToken: Swift.String
+  public var mac: Swift.String
+  public var productId: Swift.String
+  public var random: Swift.String
+  public var randomKey: Swift.String
+  public init(_ dic: Swift.Dictionary<Swift.String, Any>)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 extension GizwitsiOSSDK.GizActivatorException : Swift.Equatable {}
 extension GizwitsiOSSDK.GizActivatorException : Swift.Hashable {}
 extension GizwitsiOSSDK.GizActivatorException : Swift.RawRepresentable {}
