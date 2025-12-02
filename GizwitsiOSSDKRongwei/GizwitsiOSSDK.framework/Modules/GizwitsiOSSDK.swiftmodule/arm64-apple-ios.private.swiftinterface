@@ -114,6 +114,10 @@ public struct GizConfigStruct : Swift.Codable {
   public func checkUpdate(firmwareType: GizwitsiOSSDK.GizOTAFirmwareType) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizCheckUpdateResultInfo, GizwitsiOSSDK.GizOTAException?>
   public func startUpgrade(firmwareType: GizwitsiOSSDK.GizOTAFirmwareType, progressHandler: @escaping (GizwitsiOSSDK.GizOTAProgressData) -> Swift.Void) async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizOTAException?>
   public func cancelUpgrade() async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizOTAException?>
+  public func queryTimer() async -> GizwitsiOSSDK.GizResult<[GizwitsiOSSDK.GizDeviceLocalTimerItem]?, GizwitsiOSSDK.GizAPIException?>
+  public func createTimer(data: GizwitsiOSSDK.GizDeviceLocalTimerParams) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizDeviceTimerResult, GizwitsiOSSDK.GizAPIException?>
+  public func deleteTimer(id: Swift.Int) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizDeleteDeviceTimerResult, GizwitsiOSSDK.GizAPIException?>
+  public func editTimer(data: GizwitsiOSSDK.GizDeviceLocalTimerParams) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizDeviceTimerResult, GizwitsiOSSDK.GizAPIException?>
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
@@ -606,6 +610,46 @@ public enum GizAPIException : Swift.Int, Swift.Codable {
   public var rawValue: Swift.Int {
     get
   }
+}
+public enum GizTimerSyncStatus : Swift.Int, Swift.Codable {
+  case synching
+  case success
+  case fail
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct GizDeviceLocalTimerItem : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public func shiftRepeatArray(repeat: [Swift.UInt8], offset: Swift.Int) -> [Swift.UInt8]
+public func convertRepeatToUTC(repeat: [Swift.UInt8], localTime: Swift.String, forward: Swift.Bool) -> [Swift.UInt8]
+public struct GizDeviceLocalTimerApiItem : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GizDeviceLocalTimerParams : Swift.Codable {
+  public init(taskId: Swift.Int, attr: GizwitsiOSSDK.GizJSON, date: Swift.String, time: Swift.String, repeat: [Swift.UInt8], open: Swift.Bool)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GizDeviceTimerResult : GizwitsiOSSDK.GizOpenApiResultInfo {
+  public init(_ dic: Swift.Dictionary<Swift.String, Any>)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GizDeleteDeviceTimerResult : GizwitsiOSSDK.GizOpenApiResultInfo {
+  public init(_ dic: Swift.Dictionary<Swift.String, Any>)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GizQueryDeviceTimerResult : GizwitsiOSSDK.GizOpenApiResultInfo {
+  public init(_ dic: Swift.Dictionary<Swift.String, Any>)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class GizLanCapability : GizwitsiOSSDK.GizBaseCapability {
   override public func encode(to encoder: any Swift.Encoder) throws
@@ -1618,6 +1662,9 @@ extension GizwitsiOSSDK.GizOTAException : Swift.RawRepresentable {}
 extension GizwitsiOSSDK.GizAPIException : Swift.Equatable {}
 extension GizwitsiOSSDK.GizAPIException : Swift.Hashable {}
 extension GizwitsiOSSDK.GizAPIException : Swift.RawRepresentable {}
+extension GizwitsiOSSDK.GizTimerSyncStatus : Swift.Equatable {}
+extension GizwitsiOSSDK.GizTimerSyncStatus : Swift.Hashable {}
+extension GizwitsiOSSDK.GizTimerSyncStatus : Swift.RawRepresentable {}
 extension GizwitsiOSSDK.GizJSONError : Swift.Equatable {}
 extension GizwitsiOSSDK.GizJSONError : Swift.Hashable {}
 extension GizwitsiOSSDK.GizJSONError : Swift.RawRepresentable {}

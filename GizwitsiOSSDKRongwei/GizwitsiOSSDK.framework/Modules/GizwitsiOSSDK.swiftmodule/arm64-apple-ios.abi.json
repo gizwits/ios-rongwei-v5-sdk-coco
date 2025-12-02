@@ -3475,6 +3475,212 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "queryTimer",
+            "printedName": "queryTimer()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GizResult",
+                "printedName": "GizwitsiOSSDK.GizResult<[GizwitsiOSSDK.GizDeviceLocalTimerItem]?, GizwitsiOSSDK.GizAPIException?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[GizwitsiOSSDK.GizDeviceLocalTimerItem]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[GizwitsiOSSDK.GizDeviceLocalTimerItem]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GizDeviceLocalTimerItem",
+                            "printedName": "GizwitsiOSSDK.GizDeviceLocalTimerItem",
+                            "usr": "s:13GizwitsiOSSDK23GizDeviceLocalTimerItemV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GizwitsiOSSDK.GizAPIException?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GizAPIException",
+                        "printedName": "GizwitsiOSSDK.GizAPIException",
+                        "usr": "s:13GizwitsiOSSDK15GizAPIExceptionO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:13GizwitsiOSSDK9GizResultC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GizwitsiOSSDK17GizBaseCapabilityC10queryTimerAA0C6ResultCySayAA0c11DeviceLocalG4ItemVGSgAA0C12APIExceptionOSgGyYaF",
+            "mangledName": "$s13GizwitsiOSSDK17GizBaseCapabilityC10queryTimerAA0C6ResultCySayAA0c11DeviceLocalG4ItemVGSgAA0C12APIExceptionOSgGyYaF",
+            "moduleName": "GizwitsiOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createTimer",
+            "printedName": "createTimer(data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GizResult",
+                "printedName": "GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizDeviceTimerResult, GizwitsiOSSDK.GizAPIException?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GizDeviceTimerResult",
+                    "printedName": "GizwitsiOSSDK.GizDeviceTimerResult",
+                    "usr": "s:13GizwitsiOSSDK20GizDeviceTimerResultV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GizwitsiOSSDK.GizAPIException?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GizAPIException",
+                        "printedName": "GizwitsiOSSDK.GizAPIException",
+                        "usr": "s:13GizwitsiOSSDK15GizAPIExceptionO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:13GizwitsiOSSDK9GizResultC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GizDeviceLocalTimerParams",
+                "printedName": "GizwitsiOSSDK.GizDeviceLocalTimerParams",
+                "usr": "s:13GizwitsiOSSDK25GizDeviceLocalTimerParamsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GizwitsiOSSDK17GizBaseCapabilityC11createTimer4dataAA0C6ResultCyAA0c6DevicegI0VAA0C12APIExceptionOSgGAA0cj5LocalG6ParamsV_tYaF",
+            "mangledName": "$s13GizwitsiOSSDK17GizBaseCapabilityC11createTimer4dataAA0C6ResultCyAA0c6DevicegI0VAA0C12APIExceptionOSgGAA0cj5LocalG6ParamsV_tYaF",
+            "moduleName": "GizwitsiOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteTimer",
+            "printedName": "deleteTimer(id:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GizResult",
+                "printedName": "GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizDeleteDeviceTimerResult, GizwitsiOSSDK.GizAPIException?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GizDeleteDeviceTimerResult",
+                    "printedName": "GizwitsiOSSDK.GizDeleteDeviceTimerResult",
+                    "usr": "s:13GizwitsiOSSDK26GizDeleteDeviceTimerResultV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GizwitsiOSSDK.GizAPIException?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GizAPIException",
+                        "printedName": "GizwitsiOSSDK.GizAPIException",
+                        "usr": "s:13GizwitsiOSSDK15GizAPIExceptionO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:13GizwitsiOSSDK9GizResultC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GizwitsiOSSDK17GizBaseCapabilityC11deleteTimer2idAA0C6ResultCyAA0c12DeleteDevicegI0VAA0C12APIExceptionOSgGSi_tYaF",
+            "mangledName": "$s13GizwitsiOSSDK17GizBaseCapabilityC11deleteTimer2idAA0C6ResultCyAA0c12DeleteDevicegI0VAA0C12APIExceptionOSgGSi_tYaF",
+            "moduleName": "GizwitsiOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "editTimer",
+            "printedName": "editTimer(data:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GizResult",
+                "printedName": "GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizDeviceTimerResult, GizwitsiOSSDK.GizAPIException?>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GizDeviceTimerResult",
+                    "printedName": "GizwitsiOSSDK.GizDeviceTimerResult",
+                    "usr": "s:13GizwitsiOSSDK20GizDeviceTimerResultV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "GizwitsiOSSDK.GizAPIException?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GizAPIException",
+                        "printedName": "GizwitsiOSSDK.GizAPIException",
+                        "usr": "s:13GizwitsiOSSDK15GizAPIExceptionO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "usr": "s:13GizwitsiOSSDK9GizResultC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GizDeviceLocalTimerParams",
+                "printedName": "GizwitsiOSSDK.GizDeviceLocalTimerParams",
+                "usr": "s:13GizwitsiOSSDK25GizDeviceLocalTimerParamsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GizwitsiOSSDK17GizBaseCapabilityC9editTimer4dataAA0C6ResultCyAA0c6DevicegI0VAA0C12APIExceptionOSgGAA0cj5LocalG6ParamsV_tYaF",
+            "mangledName": "$s13GizwitsiOSSDK17GizBaseCapabilityC9editTimer4dataAA0C6ResultCyAA0c6DevicegI0VAA0C12APIExceptionOSgGAA0cj5LocalG6ParamsV_tYaF",
+            "moduleName": "GizwitsiOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -17221,6 +17427,1161 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GizwitsiOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GizTimerSyncStatus",
+        "printedName": "GizTimerSyncStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "synching",
+            "printedName": "synching",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GizwitsiOSSDK.GizTimerSyncStatus.Type) -> GizwitsiOSSDK.GizTimerSyncStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GizTimerSyncStatus",
+                    "printedName": "GizwitsiOSSDK.GizTimerSyncStatus",
+                    "usr": "s:13GizwitsiOSSDK18GizTimerSyncStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GizwitsiOSSDK.GizTimerSyncStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GizTimerSyncStatus",
+                        "printedName": "GizwitsiOSSDK.GizTimerSyncStatus",
+                        "usr": "s:13GizwitsiOSSDK18GizTimerSyncStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13GizwitsiOSSDK18GizTimerSyncStatusO8synchingyA2CmF",
+            "mangledName": "$s13GizwitsiOSSDK18GizTimerSyncStatusO8synchingyA2CmF",
+            "moduleName": "GizwitsiOSSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GizwitsiOSSDK.GizTimerSyncStatus.Type) -> GizwitsiOSSDK.GizTimerSyncStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GizTimerSyncStatus",
+                    "printedName": "GizwitsiOSSDK.GizTimerSyncStatus",
+                    "usr": "s:13GizwitsiOSSDK18GizTimerSyncStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GizwitsiOSSDK.GizTimerSyncStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GizTimerSyncStatus",
+                        "printedName": "GizwitsiOSSDK.GizTimerSyncStatus",
+                        "usr": "s:13GizwitsiOSSDK18GizTimerSyncStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13GizwitsiOSSDK18GizTimerSyncStatusO7successyA2CmF",
+            "mangledName": "$s13GizwitsiOSSDK18GizTimerSyncStatusO7successyA2CmF",
+            "moduleName": "GizwitsiOSSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "fail",
+            "printedName": "fail",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(GizwitsiOSSDK.GizTimerSyncStatus.Type) -> GizwitsiOSSDK.GizTimerSyncStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GizTimerSyncStatus",
+                    "printedName": "GizwitsiOSSDK.GizTimerSyncStatus",
+                    "usr": "s:13GizwitsiOSSDK18GizTimerSyncStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "GizwitsiOSSDK.GizTimerSyncStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GizTimerSyncStatus",
+                        "printedName": "GizwitsiOSSDK.GizTimerSyncStatus",
+                        "usr": "s:13GizwitsiOSSDK18GizTimerSyncStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13GizwitsiOSSDK18GizTimerSyncStatusO4failyA2CmF",
+            "mangledName": "$s13GizwitsiOSSDK18GizTimerSyncStatusO4failyA2CmF",
+            "moduleName": "GizwitsiOSSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "GizwitsiOSSDK.GizTimerSyncStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GizTimerSyncStatus",
+                    "printedName": "GizwitsiOSSDK.GizTimerSyncStatus",
+                    "usr": "s:13GizwitsiOSSDK18GizTimerSyncStatusO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13GizwitsiOSSDK18GizTimerSyncStatusO8rawValueACSgSi_tcfc",
+            "mangledName": "$s13GizwitsiOSSDK18GizTimerSyncStatusO8rawValueACSgSi_tcfc",
+            "moduleName": "GizwitsiOSSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13GizwitsiOSSDK18GizTimerSyncStatusO8rawValueSivp",
+            "mangledName": "$s13GizwitsiOSSDK18GizTimerSyncStatusO8rawValueSivp",
+            "moduleName": "GizwitsiOSSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GizwitsiOSSDK18GizTimerSyncStatusO8rawValueSivg",
+                "mangledName": "$s13GizwitsiOSSDK18GizTimerSyncStatusO8rawValueSivg",
+                "moduleName": "GizwitsiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13GizwitsiOSSDK18GizTimerSyncStatusO",
+        "mangledName": "$s13GizwitsiOSSDK18GizTimerSyncStatusO",
+        "moduleName": "GizwitsiOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GizDeviceLocalTimerItem",
+        "printedName": "GizDeviceLocalTimerItem",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GizDeviceLocalTimerItem",
+                "printedName": "GizwitsiOSSDK.GizDeviceLocalTimerItem",
+                "usr": "s:13GizwitsiOSSDK23GizDeviceLocalTimerItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13GizwitsiOSSDK23GizDeviceLocalTimerItemV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13GizwitsiOSSDK23GizDeviceLocalTimerItemV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "GizwitsiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GizwitsiOSSDK23GizDeviceLocalTimerItemV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13GizwitsiOSSDK23GizDeviceLocalTimerItemV6encode2toys7Encoder_p_tKF",
+            "moduleName": "GizwitsiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13GizwitsiOSSDK23GizDeviceLocalTimerItemV",
+        "mangledName": "$s13GizwitsiOSSDK23GizDeviceLocalTimerItemV",
+        "moduleName": "GizwitsiOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Function",
+        "name": "shiftRepeatArray",
+        "printedName": "shiftRepeatArray(repeat:offset:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[Swift.UInt8]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "usr": "s:Sa"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[Swift.UInt8]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "usr": "s:Sa"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Int",
+            "printedName": "Swift.Int",
+            "usr": "s:Si"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:13GizwitsiOSSDK16shiftRepeatArray6repeat6offsetSays5UInt8VGAG_SitF",
+        "mangledName": "$s13GizwitsiOSSDK16shiftRepeatArray6repeat6offsetSays5UInt8VGAG_SitF",
+        "moduleName": "GizwitsiOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "Function",
+        "name": "convertRepeatToUTC",
+        "printedName": "convertRepeatToUTC(repeat:localTime:forward:)",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[Swift.UInt8]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "usr": "s:Sa"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Array",
+            "printedName": "[Swift.UInt8]",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UInt8",
+                "printedName": "Swift.UInt8",
+                "usr": "s:s5UInt8V"
+              }
+            ],
+            "usr": "s:Sa"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          },
+          {
+            "kind": "TypeNominal",
+            "name": "Bool",
+            "printedName": "Swift.Bool",
+            "usr": "s:Sb"
+          }
+        ],
+        "declKind": "Func",
+        "usr": "s:13GizwitsiOSSDK18convertRepeatToUTC6repeat9localTime7forwardSays5UInt8VGAH_SSSbtF",
+        "mangledName": "$s13GizwitsiOSSDK18convertRepeatToUTC6repeat9localTime7forwardSays5UInt8VGAH_SSSbtF",
+        "moduleName": "GizwitsiOSSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "funcSelfKind": "NonMutating"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GizDeviceLocalTimerApiItem",
+        "printedName": "GizDeviceLocalTimerApiItem",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GizDeviceLocalTimerApiItem",
+                "printedName": "GizwitsiOSSDK.GizDeviceLocalTimerApiItem",
+                "usr": "s:13GizwitsiOSSDK26GizDeviceLocalTimerApiItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13GizwitsiOSSDK26GizDeviceLocalTimerApiItemV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13GizwitsiOSSDK26GizDeviceLocalTimerApiItemV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "GizwitsiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GizwitsiOSSDK26GizDeviceLocalTimerApiItemV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13GizwitsiOSSDK26GizDeviceLocalTimerApiItemV6encode2toys7Encoder_p_tKF",
+            "moduleName": "GizwitsiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13GizwitsiOSSDK26GizDeviceLocalTimerApiItemV",
+        "mangledName": "$s13GizwitsiOSSDK26GizDeviceLocalTimerApiItemV",
+        "moduleName": "GizwitsiOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GizDeviceLocalTimerParams",
+        "printedName": "GizDeviceLocalTimerParams",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(taskId:attr:date:time:repeat:open:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GizDeviceLocalTimerParams",
+                "printedName": "GizwitsiOSSDK.GizDeviceLocalTimerParams",
+                "usr": "s:13GizwitsiOSSDK25GizDeviceLocalTimerParamsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GizJSON",
+                "printedName": "GizwitsiOSSDK.GizJSON",
+                "usr": "s:13GizwitsiOSSDK7GizJSONV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.UInt8]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13GizwitsiOSSDK25GizDeviceLocalTimerParamsV6taskId4attr4date4time6repeat4openACSi_AA0C4JSONVS2SSays5UInt8VGSbtcfc",
+            "mangledName": "$s13GizwitsiOSSDK25GizDeviceLocalTimerParamsV6taskId4attr4date4time6repeat4openACSi_AA0C4JSONVS2SSays5UInt8VGSbtcfc",
+            "moduleName": "GizwitsiOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GizDeviceLocalTimerParams",
+                "printedName": "GizwitsiOSSDK.GizDeviceLocalTimerParams",
+                "usr": "s:13GizwitsiOSSDK25GizDeviceLocalTimerParamsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13GizwitsiOSSDK25GizDeviceLocalTimerParamsV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13GizwitsiOSSDK25GizDeviceLocalTimerParamsV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "GizwitsiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GizwitsiOSSDK25GizDeviceLocalTimerParamsV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13GizwitsiOSSDK25GizDeviceLocalTimerParamsV6encode2toys7Encoder_p_tKF",
+            "moduleName": "GizwitsiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13GizwitsiOSSDK25GizDeviceLocalTimerParamsV",
+        "mangledName": "$s13GizwitsiOSSDK25GizDeviceLocalTimerParamsV",
+        "moduleName": "GizwitsiOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GizDeviceTimerResult",
+        "printedName": "GizDeviceTimerResult",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GizDeviceTimerResult",
+                "printedName": "GizwitsiOSSDK.GizDeviceTimerResult",
+                "usr": "s:13GizwitsiOSSDK20GizDeviceTimerResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13GizwitsiOSSDK20GizDeviceTimerResultVyACSDySSypGcfc",
+            "mangledName": "$s13GizwitsiOSSDK20GizDeviceTimerResultVyACSDySSypGcfc",
+            "moduleName": "GizwitsiOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GizDeviceTimerResult",
+                "printedName": "GizwitsiOSSDK.GizDeviceTimerResult",
+                "usr": "s:13GizwitsiOSSDK20GizDeviceTimerResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13GizwitsiOSSDK20GizDeviceTimerResultV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13GizwitsiOSSDK20GizDeviceTimerResultV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "GizwitsiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GizwitsiOSSDK20GizDeviceTimerResultV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13GizwitsiOSSDK20GizDeviceTimerResultV6encode2toys7Encoder_p_tKF",
+            "moduleName": "GizwitsiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13GizwitsiOSSDK20GizDeviceTimerResultV",
+        "mangledName": "$s13GizwitsiOSSDK20GizDeviceTimerResultV",
+        "moduleName": "GizwitsiOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "GizOpenApiResultInfo",
+            "printedName": "GizOpenApiResultInfo",
+            "usr": "s:13GizwitsiOSSDK20GizOpenApiResultInfoP",
+            "mangledName": "$s13GizwitsiOSSDK20GizOpenApiResultInfoP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GizDeleteDeviceTimerResult",
+        "printedName": "GizDeleteDeviceTimerResult",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GizDeleteDeviceTimerResult",
+                "printedName": "GizwitsiOSSDK.GizDeleteDeviceTimerResult",
+                "usr": "s:13GizwitsiOSSDK26GizDeleteDeviceTimerResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13GizwitsiOSSDK26GizDeleteDeviceTimerResultVyACSDySSypGcfc",
+            "mangledName": "$s13GizwitsiOSSDK26GizDeleteDeviceTimerResultVyACSDySSypGcfc",
+            "moduleName": "GizwitsiOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GizDeleteDeviceTimerResult",
+                "printedName": "GizwitsiOSSDK.GizDeleteDeviceTimerResult",
+                "usr": "s:13GizwitsiOSSDK26GizDeleteDeviceTimerResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13GizwitsiOSSDK26GizDeleteDeviceTimerResultV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13GizwitsiOSSDK26GizDeleteDeviceTimerResultV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "GizwitsiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GizwitsiOSSDK26GizDeleteDeviceTimerResultV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13GizwitsiOSSDK26GizDeleteDeviceTimerResultV6encode2toys7Encoder_p_tKF",
+            "moduleName": "GizwitsiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13GizwitsiOSSDK26GizDeleteDeviceTimerResultV",
+        "mangledName": "$s13GizwitsiOSSDK26GizDeleteDeviceTimerResultV",
+        "moduleName": "GizwitsiOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "GizOpenApiResultInfo",
+            "printedName": "GizOpenApiResultInfo",
+            "usr": "s:13GizwitsiOSSDK20GizOpenApiResultInfoP",
+            "mangledName": "$s13GizwitsiOSSDK20GizOpenApiResultInfoP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GizQueryDeviceTimerResult",
+        "printedName": "GizQueryDeviceTimerResult",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GizQueryDeviceTimerResult",
+                "printedName": "GizwitsiOSSDK.GizQueryDeviceTimerResult",
+                "usr": "s:13GizwitsiOSSDK25GizQueryDeviceTimerResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13GizwitsiOSSDK25GizQueryDeviceTimerResultVyACSDySSypGcfc",
+            "mangledName": "$s13GizwitsiOSSDK25GizQueryDeviceTimerResultVyACSDySSypGcfc",
+            "moduleName": "GizwitsiOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GizQueryDeviceTimerResult",
+                "printedName": "GizwitsiOSSDK.GizQueryDeviceTimerResult",
+                "usr": "s:13GizwitsiOSSDK25GizQueryDeviceTimerResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13GizwitsiOSSDK25GizQueryDeviceTimerResultV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13GizwitsiOSSDK25GizQueryDeviceTimerResultV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "GizwitsiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13GizwitsiOSSDK25GizQueryDeviceTimerResultV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13GizwitsiOSSDK25GizQueryDeviceTimerResultV6encode2toys7Encoder_p_tKF",
+            "moduleName": "GizwitsiOSSDK",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13GizwitsiOSSDK25GizQueryDeviceTimerResultV",
+        "mangledName": "$s13GizwitsiOSSDK25GizQueryDeviceTimerResultV",
+        "moduleName": "GizwitsiOSSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "GizOpenApiResultInfo",
+            "printedName": "GizOpenApiResultInfo",
+            "usr": "s:13GizwitsiOSSDK20GizOpenApiResultInfoP",
+            "mangledName": "$s13GizwitsiOSSDK20GizOpenApiResultInfoP"
           },
           {
             "kind": "Conformance",
@@ -36792,6 +38153,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "GizwitsiOSSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "ProductManager",
         "printedName": "ProductManager",
@@ -51642,6 +53013,34 @@
       "value": "8369"
     },
     {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApiTimer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 163,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApiTimer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 184,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApiTimer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 202,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApiTimer.swift",
+      "kind": "Array",
+      "offset": 7775,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Parse\/OTAV2\/OTAPackPackage.swift",
       "kind": "IntegerLiteral",
       "offset": 214,
@@ -54556,175 +55955,175 @@
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "Array",
-      "offset": 14294,
+      "offset": 15442,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 17974,
+      "offset": 19122,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 18010,
+      "offset": 19158,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 18049,
+      "offset": 19197,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 18088,
+      "offset": 19236,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 18113,
+      "offset": 19261,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 18140,
+      "offset": 19288,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 18843,
+      "offset": 19991,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 18879,
+      "offset": 20027,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 18915,
+      "offset": 20063,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 18949,
+      "offset": 20097,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 19088,
+      "offset": 20236,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 19150,
+      "offset": 20298,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 19184,
+      "offset": 20332,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 19226,
+      "offset": 20374,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 19266,
+      "offset": 20414,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "Array",
-      "offset": 19365,
+      "offset": 20513,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 19437,
+      "offset": 20585,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 22265,
+      "offset": 23413,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 22308,
+      "offset": 23456,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 22347,
+      "offset": 23495,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 22380,
+      "offset": 23528,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 22419,
+      "offset": 23567,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 22455,
+      "offset": 23603,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 22494,
+      "offset": 23642,
       "length": 2,
       "value": "\"\""
     }
