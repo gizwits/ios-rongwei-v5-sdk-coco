@@ -51978,8 +51978,15 @@
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/BleHandler\/BKSendDataTask.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3360,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/BleHandler\/BKSendDataTask.swift",
       "kind": "IntegerLiteral",
-      "offset": 3329,
+      "offset": 4023,
       "length": 1,
       "value": "0"
     },
@@ -53518,29 +53525,22 @@
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/BleHandler\/BleHandler.swift",
-      "kind": "StringLiteral",
-      "offset": 1298,
-      "length": 6,
-      "value": "\"ABF8\""
-    },
-    {
-      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/BleHandler\/BleHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 1634,
+      "offset": 1757,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/BleHandler\/BleHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1843,
+      "offset": 1966,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/BleHandler\/BleHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 1864,
+      "offset": 1987,
       "length": 3,
       "value": "-70"
     },
