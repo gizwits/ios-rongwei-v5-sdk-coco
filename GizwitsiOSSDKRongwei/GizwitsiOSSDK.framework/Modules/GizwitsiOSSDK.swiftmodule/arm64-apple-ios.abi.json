@@ -18952,6 +18952,27 @@
       },
       {
         "kind": "Import",
+        "name": "SystemConfiguration.CaptiveNetwork",
+        "printedName": "SystemConfiguration.CaptiveNetwork",
+        "declKind": "Import",
+        "moduleName": "GizwitsiOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "GizwitsiOSSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "GizwitsiOSSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -52119,35 +52140,35 @@
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Interface\/Device\/GizBaseProfile.swift",
       "kind": "StringLiteral",
-      "offset": 7470,
+      "offset": 7471,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Interface\/Device\/GizBaseProfile.swift",
       "kind": "IntegerLiteral",
-      "offset": 7541,
+      "offset": 7542,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Interface\/Device\/GizBaseProfile.swift",
       "kind": "StringLiteral",
-      "offset": 10048,
+      "offset": 10049,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Interface\/Device\/GizBaseProfile.swift",
       "kind": "IntegerLiteral",
-      "offset": 10132,
+      "offset": 10133,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Interface\/Device\/GizBaseProfile.swift",
       "kind": "IntegerLiteral",
-      "offset": 10198,
+      "offset": 10199,
       "length": 1,
       "value": "0"
     },
@@ -53111,6 +53132,48 @@
       "value": "1"
     },
     {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/LanHandler\/LanDeviceHandler.swift",
+      "kind": "FloatLiteral",
+      "offset": 367,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/LanHandler\/LanDeviceHandler.swift",
+      "kind": "FloatLiteral",
+      "offset": 434,
+      "length": 3,
+      "value": "6.0"
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/LanHandler\/LanDeviceHandler.swift",
+      "kind": "Array",
+      "offset": 495,
+      "length": 48,
+      "value": "[0x00, 0x00, 0x00, 0x03, 0x03, 0x00, 0x00, 0x15]"
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/LanHandler\/LanDeviceHandler.swift",
+      "kind": "Array",
+      "offset": 593,
+      "length": 48,
+      "value": "[0x00, 0x00, 0x00, 0x03, 0x03, 0x00, 0x00, 0x16]"
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/LanHandler\/LanDeviceHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 677,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/LanHandler\/LanDeviceHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 793,
+      "length": 1,
+      "value": "0"
+    },
+    {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Parse\/src2cli\/SerOnlineParse.swift",
       "kind": "StringLiteral",
       "offset": 160,
@@ -53547,23 +53610,44 @@
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/LanHandler\/LanHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 309,
+      "offset": 384,
       "length": 5,
       "value": "12416"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/LanHandler\/LanHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 387,
+      "offset": 469,
       "length": 5,
       "value": "12414"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/LanHandler\/LanHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 445,
+      "offset": 527,
       "length": 2,
       "value": "14"
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/LanHandler\/LanHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 709,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/LanHandler\/LanHandler.swift",
+      "kind": "FloatLiteral",
+      "offset": 802,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Handler\/LanHandler\/LanHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1038,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/iot-sdk\/iossdk\/GizwitsiOSSDK\/Utils\/JSON\/SwiftyJSON.swift",
