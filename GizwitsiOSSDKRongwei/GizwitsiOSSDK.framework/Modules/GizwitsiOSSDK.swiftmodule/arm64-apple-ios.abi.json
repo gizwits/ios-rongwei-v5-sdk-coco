@@ -50954,65 +50954,6 @@
         "printedName": "Data",
         "children": [
           {
-            "kind": "Var",
-            "name": "bytes",
-            "printedName": "bytes",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.UInt8]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt8",
-                    "printedName": "Swift.UInt8",
-                    "usr": "s:s5UInt8V"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10Foundation4DataV13GizwitsiOSSDKE5bytesSays5UInt8VGvp",
-            "mangledName": "$s10Foundation4DataV13GizwitsiOSSDKE5bytesSays5UInt8VGvp",
-            "moduleName": "GizwitsiOSSDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Swift.UInt8]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UInt8",
-                        "printedName": "Swift.UInt8",
-                        "usr": "s:s5UInt8V"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10Foundation4DataV13GizwitsiOSSDKE5bytesSays5UInt8VGvg",
-                "mangledName": "$s10Foundation4DataV13GizwitsiOSSDKE5bytesSays5UInt8VGvg",
-                "moduleName": "GizwitsiOSSDK",
-                "isFromExtension": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(hex:)",
@@ -55332,63 +55273,70 @@
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/GizwitsMQTTClient\/GizMQTTDeviceSubscribeInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 267,
+      "offset": 287,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/GizwitsMQTTClient\/GizMQTTDeviceSubscribeInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 437,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/GizwitsMQTTClient\/GizMQTTDeviceSubscribeInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 299,
+      "offset": 469,
       "length": 36,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/GizwitsMQTTClient\/GizMQTTDeviceSubscribeInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 366,
+      "offset": 536,
       "length": 34,
       "value": "2"
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/GizwitsMQTTClient\/GizMQTTDeviceSubscribeInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 437,
+      "offset": 607,
       "length": 36,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/GizwitsMQTTClient\/GizMQTTDeviceSubscribeInfo.swift",
       "kind": "IntegerLiteral",
-      "offset": 513,
+      "offset": 683,
       "length": 33,
       "value": "4"
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/GizwitsMQTTClient\/GizMQTTDeviceSubscribeInfo.swift",
       "kind": "StringLiteral",
-      "offset": 5051,
+      "offset": 7382,
       "length": 9,
       "value": "\"app2dev\""
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/GizwitsMQTTClient\/GizMQTTDeviceSubscribeInfo.swift",
       "kind": "StringLiteral",
-      "offset": 5096,
+      "offset": 7427,
       "length": 9,
       "value": "\"dev2app\""
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/GizwitsMQTTClient\/GizMQTTDeviceSubscribeInfo.swift",
       "kind": "StringLiteral",
-      "offset": 5141,
+      "offset": 7472,
       "length": 13,
       "value": "\"ser2cli_res\""
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/GizwitsMQTTClient\/GizMQTTDeviceSubscribeInfo.swift",
       "kind": "BooleanLiteral",
-      "offset": 5825,
+      "offset": 8156,
       "length": 5,
       "value": "false"
     },
@@ -55843,21 +55791,21 @@
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Utils\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2971,
+      "offset": 2864,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Utils\/Utils.swift",
       "kind": "IntegerLiteral",
-      "offset": 2976,
+      "offset": 2869,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Utils\/Utils.swift",
       "kind": "Array",
-      "offset": 3049,
+      "offset": 2942,
       "length": 2,
       "value": "[]"
     },
@@ -56094,15 +56042,22 @@
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/MQTTDeviceHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 330,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/MQTTDeviceHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 247,
+      "offset": 429,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/MQTTDeviceHandler.swift",
       "kind": "BooleanLiteral",
-      "offset": 280,
+      "offset": 462,
       "length": 5,
       "value": "false"
     },

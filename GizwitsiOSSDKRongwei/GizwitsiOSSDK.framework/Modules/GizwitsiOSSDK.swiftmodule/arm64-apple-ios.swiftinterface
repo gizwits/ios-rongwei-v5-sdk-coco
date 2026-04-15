@@ -1298,9 +1298,6 @@ extension Swift.StringProtocol {
   public func toPointer() -> Swift.UnsafePointer<Swift.UInt8>?
 }
 extension Foundation.Data {
-  public var bytes: [Swift.UInt8] {
-    get
-  }
   public init?(hex: Swift.String)
   public struct HexEncodingOptions : Swift.OptionSet {
     public init(rawValue: Swift.Int)
