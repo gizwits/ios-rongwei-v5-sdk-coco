@@ -2,4 +2,4 @@ create a tag
 
 release tag
 
-pod trunk push GizwitsiOSSDK.podspec
+pod trunk push GizwitsiOSSDKRongwei.podspec
