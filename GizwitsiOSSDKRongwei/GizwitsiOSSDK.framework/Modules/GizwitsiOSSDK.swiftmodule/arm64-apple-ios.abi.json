@@ -53738,6 +53738,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/LanHandler\/LanHandler.swift",
+      "kind": "FloatLiteral",
+      "offset": 1222,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Utils\/JSON\/SwiftyJSON.swift",
       "kind": "IntegerLiteral",
       "offset": 1309,
@@ -54986,21 +54993,49 @@
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/MQTTHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 319,
+      "offset": 236,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/MQTTHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 295,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/MQTTHandler.swift",
+      "kind": "IntegerLiteral",
+      "offset": 442,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/MQTTHandler.swift",
       "kind": "StringLiteral",
-      "offset": 374,
+      "offset": 497,
       "length": 35,
       "value": "\"com.gizwits.sdk.mqttSessionsQueue\""
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/MQTTHandler.swift",
       "kind": "Dictionary",
-      "offset": 467,
+      "offset": 590,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/MQTTHandler.swift",
+      "kind": "Dictionary",
+      "offset": 651,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/MQTTHandler\/MQTTHandler.swift",
+      "kind": "Dictionary",
+      "offset": 711,
       "length": 3,
       "value": "[]"
     },

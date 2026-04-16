@@ -345,6 +345,7 @@ typedef void (^_MQTTPublishHandler)(NSError *error);
 /** Session status
  */
 @property (nonatomic, readonly) _MQTTSessionStatus status;
+@property (nonatomic) BOOL allowAutoReconnect;
 
 /** Indicates if the broker found a persistent session when connecting with cleanSession:FALSE
  */
