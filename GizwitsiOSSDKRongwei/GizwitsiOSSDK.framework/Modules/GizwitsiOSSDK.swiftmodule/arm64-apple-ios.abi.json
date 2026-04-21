@@ -51283,6 +51283,64 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "bytes",
+            "printedName": "bytes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.UInt8]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UInt8",
+                    "printedName": "Swift.UInt8",
+                    "usr": "s:s5UInt8V"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10Foundation4DataV13GizwitsiOSSDKE5bytesSays5UInt8VGvp",
+            "mangledName": "$s10Foundation4DataV13GizwitsiOSSDKE5bytesSays5UInt8VGvp",
+            "moduleName": "GizwitsiOSSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.UInt8]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UInt8",
+                        "printedName": "Swift.UInt8",
+                        "usr": "s:s5UInt8V"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10Foundation4DataV13GizwitsiOSSDKE5bytesSays5UInt8VGvg",
+                "mangledName": "$s10Foundation4DataV13GizwitsiOSSDKE5bytesSays5UInt8VGvg",
+                "moduleName": "GizwitsiOSSDK",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -52025,28 +52083,28 @@
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/BleHandler\/BleDeviceHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 11242,
+      "offset": 12633,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/BleHandler\/BleDeviceHandler.swift",
       "kind": "FloatLiteral",
-      "offset": 11332,
+      "offset": 12723,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/BleHandler\/BleDeviceHandler.swift",
       "kind": "FloatLiteral",
-      "offset": 11414,
+      "offset": 12805,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/BleHandler\/BleDeviceHandler.swift",
       "kind": "FloatLiteral",
-      "offset": 11503,
+      "offset": 12894,
       "length": 3,
       "value": "0.1"
     },
@@ -55261,7 +55319,7 @@
       "kind": "IntegerLiteral",
       "offset": 1699,
       "length": 1,
-      "value": "4"
+      "value": "6"
     },
     {
       "filePath": "\/Users\/Kylewang\/Documents\/Project\/iossdkv5\/GizwitsiOSSDK\/Handler\/Base\/BaseDeviceHandler.swift",
