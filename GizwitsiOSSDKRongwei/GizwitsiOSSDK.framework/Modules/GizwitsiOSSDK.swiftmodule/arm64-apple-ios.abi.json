@@ -52083,28 +52083,28 @@
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Handler\/BleHandler\/BleDeviceHandler.swift",
       "kind": "IntegerLiteral",
-      "offset": 12633,
+      "offset": 12853,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Handler\/BleHandler\/BleDeviceHandler.swift",
       "kind": "FloatLiteral",
-      "offset": 12723,
+      "offset": 12943,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Handler\/BleHandler\/BleDeviceHandler.swift",
       "kind": "FloatLiteral",
-      "offset": 12805,
+      "offset": 13025,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Handler\/BleHandler\/BleDeviceHandler.swift",
       "kind": "FloatLiteral",
-      "offset": 12894,
+      "offset": 13114,
       "length": 3,
       "value": "0.1"
     },
@@ -53752,6 +53752,20 @@
       "offset": 1987,
       "length": 3,
       "value": "-70"
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Handler\/BleHandler\/BleHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 2933,
+      "length": 32,
+      "value": "\"com.gizwits.ble.scannedDevices\""
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Handler\/BleHandler\/BleHandler.swift",
+      "kind": "Array",
+      "offset": 3019,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Handler\/LanHandler\/LanHandler.swift",
