@@ -2053,6 +2053,13 @@
       },
       {
         "kind": "Import",
+        "name": "Darwin",
+        "printedName": "Darwin",
+        "declKind": "Import",
+        "moduleName": "GizwitsiOSSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -51985,28 +51992,28 @@
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Utils\/Logs\/LogFile\/swift_log_file.swift",
       "kind": "FloatLiteral",
-      "offset": 321,
+      "offset": 364,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Utils\/Logs\/LogFile\/swift_log_file.swift",
       "kind": "IntegerLiteral",
-      "offset": 351,
+      "offset": 394,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Utils\/Logs\/LogFile\/swift_log_file.swift",
       "kind": "IntegerLiteral",
-      "offset": 358,
+      "offset": 401,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Utils\/Logs\/LogFile\/swift_log_file.swift",
       "kind": "IntegerLiteral",
-      "offset": 365,
+      "offset": 408,
       "length": 2,
       "value": "30"
     },
