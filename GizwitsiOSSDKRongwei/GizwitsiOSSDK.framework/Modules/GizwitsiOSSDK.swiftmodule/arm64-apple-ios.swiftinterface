@@ -4,6 +4,7 @@
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import SystemConfiguration.CaptiveNetwork
 import Combine
+import CommonCrypto
 import CoreBluetooth
 import CoreLocation
 import CoreTelephony
@@ -57,11 +58,13 @@ public struct GizServerInfoStruct : Swift.Codable {
 public struct GizConfigStruct : Swift.Codable {
   public var appID: Swift.String
   public var appSecret: Swift.String
+  public var enableRequestEncryption: Swift.Bool
+  public var appVersion: Swift.String
   public var productInfos: [GizwitsiOSSDK.GizProductInfoStruct]
   public var serverInfo: GizwitsiOSSDK.GizServerInfoStruct?
-  public init(appID: Swift.String, appSecret: Swift.String, productInfos: [GizwitsiOSSDK.GizProductInfoStruct], serverInfo: GizwitsiOSSDK.GizServerInfoStruct?)
-  public func encode(to encoder: any Swift.Encoder) throws
+  public init(appID: Swift.String, appSecret: Swift.String, productInfos: [GizwitsiOSSDK.GizProductInfoStruct], serverInfo: GizwitsiOSSDK.GizServerInfoStruct?, enableRequestEncryption: Swift.Bool = true, appVersion: Swift.String = "")
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 @_hasMissingDesignatedInitializers public class GizMQTTCapability : GizwitsiOSSDK.GizBaseCapability {
   override public func encode(to encoder: any Swift.Encoder) throws

@@ -1666,6 +1666,176 @@
           },
           {
             "kind": "Var",
+            "name": "enableRequestEncryption",
+            "printedName": "enableRequestEncryption",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13GizwitsiOSSDK15GizConfigStructV23enableRequestEncryptionSbvp",
+            "mangledName": "$s13GizwitsiOSSDK15GizConfigStructV23enableRequestEncryptionSbvp",
+            "moduleName": "GizwitsiOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GizwitsiOSSDK15GizConfigStructV23enableRequestEncryptionSbvg",
+                "mangledName": "$s13GizwitsiOSSDK15GizConfigStructV23enableRequestEncryptionSbvg",
+                "moduleName": "GizwitsiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GizwitsiOSSDK15GizConfigStructV23enableRequestEncryptionSbvs",
+                "mangledName": "$s13GizwitsiOSSDK15GizConfigStructV23enableRequestEncryptionSbvs",
+                "moduleName": "GizwitsiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GizwitsiOSSDK15GizConfigStructV23enableRequestEncryptionSbvM",
+                "mangledName": "$s13GizwitsiOSSDK15GizConfigStructV23enableRequestEncryptionSbvM",
+                "moduleName": "GizwitsiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appVersion",
+            "printedName": "appVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13GizwitsiOSSDK15GizConfigStructV10appVersionSSvp",
+            "mangledName": "$s13GizwitsiOSSDK15GizConfigStructV10appVersionSSvp",
+            "moduleName": "GizwitsiOSSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GizwitsiOSSDK15GizConfigStructV10appVersionSSvg",
+                "mangledName": "$s13GizwitsiOSSDK15GizConfigStructV10appVersionSSvg",
+                "moduleName": "GizwitsiOSSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GizwitsiOSSDK15GizConfigStructV10appVersionSSvs",
+                "mangledName": "$s13GizwitsiOSSDK15GizConfigStructV10appVersionSSvs",
+                "moduleName": "GizwitsiOSSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13GizwitsiOSSDK15GizConfigStructV10appVersionSSvM",
+                "mangledName": "$s13GizwitsiOSSDK15GizConfigStructV10appVersionSSvM",
+                "moduleName": "GizwitsiOSSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "productInfos",
             "printedName": "productInfos",
             "children": [
@@ -1886,7 +2056,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(appID:appSecret:productInfos:serverInfo:)",
+            "printedName": "init(appID:appSecret:productInfos:serverInfo:enableRequestEncryption:appVersion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1933,11 +2103,25 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13GizwitsiOSSDK15GizConfigStructV5appID0F6Secret12productInfos10serverInfoACSS_SSSayAA0c7ProductlE0VGAA0c6ServerlE0VSgtcfc",
-            "mangledName": "$s13GizwitsiOSSDK15GizConfigStructV5appID0F6Secret12productInfos10serverInfoACSS_SSSayAA0c7ProductlE0VGAA0c6ServerlE0VSgtcfc",
+            "usr": "s:13GizwitsiOSSDK15GizConfigStructV5appID0F6Secret12productInfos10serverInfo23enableRequestEncryption0F7VersionACSS_SSSayAA0c7ProductlE0VGAA0c6ServerlE0VSgSbSStcfc",
+            "mangledName": "$s13GizwitsiOSSDK15GizConfigStructV5appID0F6Secret12productInfos10serverInfo23enableRequestEncryption0F7VersionACSS_SSSayAA0c7ProductlE0VGAA0c6ServerlE0VSgSbSStcfc",
             "moduleName": "GizwitsiOSSDK",
             "declAttributes": [
               "AccessControl"
@@ -1966,7 +2150,9 @@
             "usr": "s:13GizwitsiOSSDK15GizConfigStructV4fromACs7Decoder_p_tKcfc",
             "mangledName": "$s13GizwitsiOSSDK15GizConfigStructV4fromACs7Decoder_p_tKcfc",
             "moduleName": "GizwitsiOSSDK",
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
             "throwing": true,
             "init_kind": "Designated"
           },
@@ -36527,6 +36713,13 @@
       },
       {
         "kind": "Import",
+        "name": "CommonCrypto",
+        "printedName": "CommonCrypto",
+        "declKind": "Import",
+        "moduleName": "GizwitsiOSSDK"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -51928,64 +52121,92 @@
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Config\/GizConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1199,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Config\/GizConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1264,
+      "offset": 1234,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Config\/GizConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2444,
       "length": 19,
       "value": "\"usapi.gizwits.com\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Config\/GizConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1334,
+      "offset": 2514,
       "length": 19,
       "value": "\"euapi.gizwits.com\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Config\/GizConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1404,
+      "offset": 2584,
       "length": 17,
       "value": "\"api.gizwits.com\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Config\/GizConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1465,
+      "offset": 2645,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Config\/GizConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1510,
+      "offset": 2690,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Config\/GizConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2747,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Config\/GizConfig.swift",
+      "kind": "StringLiteral",
+      "offset": 2794,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Config\/GizConfig.swift",
       "kind": "Array",
-      "offset": 1574,
+      "offset": 2857,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Config\/GizConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1665,
+      "offset": 2948,
       "length": 17,
       "value": "\"api.gizwits.com\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Config\/GizConfig.swift",
       "kind": "Array",
-      "offset": 1877,
+      "offset": 3160,
       "length": 420,
       "value": "[\"8bc1c03fc3d64204b9925591664b5c20\", \"fbc861733103419b9c2a09c71584cfe5\", \"99763dc38ea64178a71b509efbbb17ed\", \"d3ac9226d983470284b5d133cf4fd6b4\", \"3d718ac2d47f45778e591614ced793da\", \"095d319378614b7d81663c812f207288\", \"ddb34fb0df8d4f75b3633d5277f82bb1\"]"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Config\/GizConfig.swift",
       "kind": "Array",
-      "offset": 2591,
+      "offset": 3874,
       "length": 145,
       "value": "[\"T53NN8\", \"FTEW0E\", \"F12D9Q\", \"T8HDVS\"]"
     },
@@ -53217,7 +53438,7 @@
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApiTimer.swift",
       "kind": "Array",
-      "offset": 7775,
+      "offset": 7940,
       "length": 2,
       "value": "[]"
     },
@@ -54981,91 +55202,91 @@
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/Tool.swift",
       "kind": "IntegerLiteral",
-      "offset": 2293,
+      "offset": 2522,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/Tool.swift",
       "kind": "IntegerLiteral",
-      "offset": 2346,
+      "offset": 2575,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/Tool.swift",
       "kind": "IntegerLiteral",
-      "offset": 2371,
+      "offset": 2600,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/Tool.swift",
       "kind": "StringLiteral",
-      "offset": 2443,
+      "offset": 2672,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/Tool.swift",
       "kind": "IntegerLiteral",
-      "offset": 2559,
+      "offset": 2788,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/Tool.swift",
       "kind": "IntegerLiteral",
-      "offset": 2581,
+      "offset": 2810,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/Tool.swift",
       "kind": "IntegerLiteral",
-      "offset": 2586,
+      "offset": 2815,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/Tool.swift",
       "kind": "IntegerLiteral",
-      "offset": 2627,
+      "offset": 2856,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/Tool.swift",
       "kind": "IntegerLiteral",
-      "offset": 2845,
+      "offset": 3074,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/Tool.swift",
       "kind": "IntegerLiteral",
-      "offset": 3037,
+      "offset": 3266,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/Tool.swift",
       "kind": "IntegerLiteral",
-      "offset": 3176,
+      "offset": 3405,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/Tool.swift",
       "kind": "IntegerLiteral",
-      "offset": 3358,
+      "offset": 3587,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/Tool.swift",
       "kind": "IntegerLiteral",
-      "offset": 3418,
+      "offset": 3647,
       "length": 1,
       "value": "2"
     },
@@ -55723,28 +55944,35 @@
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GRequestProvider.swift",
       "kind": "StringLiteral",
-      "offset": 447,
+      "offset": 248,
+      "length": 12,
+      "value": "\"HmacSHA256\""
+    },
+    {
+      "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GRequestProvider.swift",
+      "kind": "StringLiteral",
+      "offset": 6686,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GRequestProvider.swift",
       "kind": "StringLiteral",
-      "offset": 469,
+      "offset": 6708,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GRequestProvider.swift",
       "kind": "StringLiteral",
-      "offset": 494,
+      "offset": 6733,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GRequestProvider.swift",
       "kind": "StringLiteral",
-      "offset": 518,
+      "offset": 6757,
       "length": 5,
       "value": "\"PUT\""
     },
@@ -56255,175 +56483,175 @@
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "Array",
-      "offset": 15523,
+      "offset": 15817,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 19206,
+      "offset": 19755,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 19242,
+      "offset": 19791,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 19281,
+      "offset": 19830,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 19320,
+      "offset": 19869,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 19345,
+      "offset": 19894,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 19372,
+      "offset": 19921,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 20075,
+      "offset": 20624,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 20111,
+      "offset": 20660,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 20147,
+      "offset": 20696,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 20181,
+      "offset": 20730,
       "length": 4,
       "value": "\"en\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 20320,
+      "offset": 20869,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 20382,
+      "offset": 20931,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "BooleanLiteral",
-      "offset": 20416,
+      "offset": 20965,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 20458,
+      "offset": 21007,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "IntegerLiteral",
-      "offset": 20498,
+      "offset": 21047,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "Array",
-      "offset": 20597,
+      "offset": 21146,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 20669,
+      "offset": 21218,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 23517,
+      "offset": 24102,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 23560,
+      "offset": 24145,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 23599,
+      "offset": 24184,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 23632,
+      "offset": 24217,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 23671,
+      "offset": 24256,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 23707,
+      "offset": 24292,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Services\/GOpenApi.swift",
       "kind": "StringLiteral",
-      "offset": 23746,
+      "offset": 24331,
       "length": 2,
       "value": "\"\""
     }
