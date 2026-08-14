@@ -1,10 +1,9 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
-// swift-module-flags: -target arm64-apple-ios13 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name GizwitsiOSSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GizwitsiOSSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import SystemConfiguration.CaptiveNetwork
 import Combine
-import CommonCrypto
 import CoreBluetooth
 import CoreLocation
 import CoreTelephony
@@ -58,20 +57,18 @@ public struct GizServerInfoStruct : Swift.Codable {
 public struct GizConfigStruct : Swift.Codable {
   public var appID: Swift.String
   public var appSecret: Swift.String
-  public var enableRequestEncryption: Swift.Bool
-  public var appVersion: Swift.String
   public var productInfos: [GizwitsiOSSDK.GizProductInfoStruct]
   public var serverInfo: GizwitsiOSSDK.GizServerInfoStruct?
-  public init(appID: Swift.String, appSecret: Swift.String, productInfos: [GizwitsiOSSDK.GizProductInfoStruct], serverInfo: GizwitsiOSSDK.GizServerInfoStruct?, enableRequestEncryption: Swift.Bool = true, appVersion: Swift.String = "")
-  public init(from decoder: any Swift.Decoder) throws
+  public init(appID: Swift.String, appSecret: Swift.String, productInfos: [GizwitsiOSSDK.GizProductInfoStruct], serverInfo: GizwitsiOSSDK.GizServerInfoStruct?)
   public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class GizMQTTCapability : GizwitsiOSSDK.GizBaseCapability {
   override public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class GizBaseCapability : Foundation.ObservableObject, Swift.Encodable {
-  @Combine.Published<Swift.Bool> @_projectedValueProperty($isActive) public var isActive: Swift.Bool {
+  @Combine.Published @_projectedValueProperty($isActive) public var isActive: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -83,7 +80,7 @@ public struct GizConfigStruct : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published<GizwitsiOSSDK.GizBaseProfile?> @_projectedValueProperty($deviceProfile) public var deviceProfile: GizwitsiOSSDK.GizBaseProfile? {
+  @Combine.Published @_projectedValueProperty($deviceProfile) public var deviceProfile: GizwitsiOSSDK.GizBaseProfile? {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -171,7 +168,7 @@ public protocol GizBaseProfileProvider {
     get
   }
   public var sno: Swift.String?
-  @Combine.Published<Swift.Bool> @_projectedValueProperty($isOnline) public var isOnline: Swift.Bool {
+  @Combine.Published @_projectedValueProperty($isOnline) public var isOnline: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -183,7 +180,7 @@ public protocol GizBaseProfileProvider {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published<Swift.Bool> @_projectedValueProperty($isLogin) public var isLogin: Swift.Bool {
+  @Combine.Published @_projectedValueProperty($isLogin) public var isLogin: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -204,19 +201,19 @@ public protocol GizBaseProfileProvider {
   public var remark: Swift.String {
     get
   }
-  @Combine.Published<Swift.String?> @_projectedValueProperty($did) public var did: Swift.String? {
+  @Combine.Published @_projectedValueProperty($did) public var did: Swift.String? {
     get
   }
   public var $did: Combine.Published<Swift.String?>.Publisher {
     get
   }
-  @Combine.Published<GizwitsiOSSDK.GizProtocolVersion> @_projectedValueProperty($protocolVersion) public var protocolVersion: GizwitsiOSSDK.GizProtocolVersion {
+  @Combine.Published @_projectedValueProperty($protocolVersion) public var protocolVersion: GizwitsiOSSDK.GizProtocolVersion {
     get
   }
   public var $protocolVersion: Combine.Published<GizwitsiOSSDK.GizProtocolVersion>.Publisher {
     get
   }
-  @Combine.Published<Swift.Bool> @_projectedValueProperty($supportOTA) public var supportOTA: Swift.Bool {
+  @Combine.Published @_projectedValueProperty($supportOTA) public var supportOTA: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -228,7 +225,7 @@ public protocol GizBaseProfileProvider {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published<Swift.Bool> @_projectedValueProperty($requiresAuthentication) public var requiresAuthentication: Swift.Bool {
+  @Combine.Published @_projectedValueProperty($requiresAuthentication) public var requiresAuthentication: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -240,7 +237,7 @@ public protocol GizBaseProfileProvider {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published<GizwitsiOSSDK.AuthenticationMethod> @_projectedValueProperty($authenticationMethod) public var authenticationMethod: GizwitsiOSSDK.AuthenticationMethod {
+  @Combine.Published @_projectedValueProperty($authenticationMethod) public var authenticationMethod: GizwitsiOSSDK.AuthenticationMethod {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -252,7 +249,7 @@ public protocol GizBaseProfileProvider {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published<Swift.Bool> @_projectedValueProperty($supportFuzzyConfig) public var supportFuzzyConfig: Swift.Bool {
+  @Combine.Published @_projectedValueProperty($supportFuzzyConfig) public var supportFuzzyConfig: Swift.Bool {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -264,43 +261,43 @@ public protocol GizBaseProfileProvider {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published<Swift.String?> @_projectedValueProperty($rootDid) public var rootDid: Swift.String? {
+  @Combine.Published @_projectedValueProperty($rootDid) public var rootDid: Swift.String? {
     get
   }
   public var $rootDid: Combine.Published<Swift.String?>.Publisher {
     get
   }
-  @Combine.Published<Swift.String?> @_projectedValueProperty($moduleSoftVer) public var moduleSoftVer: Swift.String? {
+  @Combine.Published @_projectedValueProperty($moduleSoftVer) public var moduleSoftVer: Swift.String? {
     get
   }
   public var $moduleSoftVer: Combine.Published<Swift.String?>.Publisher {
     get
   }
-  @Combine.Published<Swift.String?> @_projectedValueProperty($moduleHardVer) public var moduleHardVer: Swift.String? {
+  @Combine.Published @_projectedValueProperty($moduleHardVer) public var moduleHardVer: Swift.String? {
     get
   }
   public var $moduleHardVer: Combine.Published<Swift.String?>.Publisher {
     get
   }
-  @Combine.Published<Swift.Bool?> @_projectedValueProperty($configured) public var configured: Swift.Bool? {
+  @Combine.Published @_projectedValueProperty($configured) public var configured: Swift.Bool? {
     get
   }
   public var $configured: Combine.Published<Swift.Bool?>.Publisher {
     get
   }
-  @Combine.Published<Swift.String?> @_projectedValueProperty($mcuSoftVer) public var mcuSoftVer: Swift.String? {
+  @Combine.Published @_projectedValueProperty($mcuSoftVer) public var mcuSoftVer: Swift.String? {
     get
   }
   public var $mcuSoftVer: Combine.Published<Swift.String?>.Publisher {
     get
   }
-  @Combine.Published<Swift.String?> @_projectedValueProperty($mcuHardVer) public var mcuHardVer: Swift.String? {
+  @Combine.Published @_projectedValueProperty($mcuHardVer) public var mcuHardVer: Swift.String? {
     get
   }
   public var $mcuHardVer: Combine.Published<Swift.String?>.Publisher {
     get
   }
-  @Combine.Published<Swift.Bool> @_projectedValueProperty($isBind) public var isBind: Swift.Bool {
+  @Combine.Published @_projectedValueProperty($isBind) public var isBind: Swift.Bool {
     get
   }
   public var $isBind: Combine.Published<Swift.Bool>.Publisher {
@@ -320,7 +317,7 @@ public protocol GizLanProfileProvider : GizwitsiOSSDK.GizBaseProfileProvider {
 @_hasMissingDesignatedInitializers public class GizLanProfile : GizwitsiOSSDK.GizBaseProfile, Swift.Equatable, GizwitsiOSSDK.GizLanProfileProvider {
   public static func == (lhs: GizwitsiOSSDK.GizLanProfile, rhs: GizwitsiOSSDK.GizLanProfile) -> Swift.Bool
   public var port: Swift.UInt16
-  @Combine.Published<Swift.String> @_projectedValueProperty($ip) public var ip: Swift.String {
+  @Combine.Published @_projectedValueProperty($ip) public var ip: Swift.String {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -332,7 +329,7 @@ public protocol GizLanProfileProvider : GizwitsiOSSDK.GizBaseProfileProvider {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published<Swift.Int> @_projectedValueProperty($cTime) public var cTime: Swift.Int {
+  @Combine.Published @_projectedValueProperty($cTime) public var cTime: Swift.Int {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -354,7 +351,7 @@ public protocol GizMQTTProfileProvider : GizwitsiOSSDK.GizBaseProfileProvider {
   var rootDid: Swift.String? { get }
 }
 @_hasMissingDesignatedInitializers public class GizMqttProfile : GizwitsiOSSDK.GizBaseProfile, Swift.Equatable, GizwitsiOSSDK.GizMQTTProfileProvider {
-  @Combine.Published<Swift.String> @_projectedValueProperty($host) public var host: Swift.String {
+  @Combine.Published @_projectedValueProperty($host) public var host: Swift.String {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -366,7 +363,7 @@ public protocol GizMQTTProfileProvider : GizwitsiOSSDK.GizBaseProfileProvider {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published<Swift.UInt16> @_projectedValueProperty($port) public var port: Swift.UInt16 {
+  @Combine.Published @_projectedValueProperty($port) public var port: Swift.UInt16 {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -413,7 +410,7 @@ public protocol GizBleProfileProvider : GizwitsiOSSDK.GizBaseProfileProvider {
   var blueToothVersion: GizwitsiOSSDK.BlueToothVersion { get set }
 }
 @_hasMissingDesignatedInitializers public class GizBleProfile : GizwitsiOSSDK.GizBaseProfile, Swift.Equatable, GizwitsiOSSDK.GizBleProfileProvider {
-  @Combine.Published<Swift.String> @_projectedValueProperty($deviceId) public var deviceId: Swift.String {
+  @Combine.Published @_projectedValueProperty($deviceId) public var deviceId: Swift.String {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -425,7 +422,7 @@ public protocol GizBleProfileProvider : GizwitsiOSSDK.GizBaseProfileProvider {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published<Swift.Int> @_projectedValueProperty($cTime) public var cTime: Swift.Int {
+  @Combine.Published @_projectedValueProperty($cTime) public var cTime: Swift.Int {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -437,7 +434,7 @@ public protocol GizBleProfileProvider : GizwitsiOSSDK.GizBaseProfileProvider {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published<Foundation.NSNumber> @_projectedValueProperty($RSSI) public var RSSI: Foundation.NSNumber {
+  @Combine.Published @_projectedValueProperty($RSSI) public var RSSI: Foundation.NSNumber {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -449,7 +446,7 @@ public protocol GizBleProfileProvider : GizwitsiOSSDK.GizBaseProfileProvider {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published<GizwitsiOSSDK.BlueToothType> @_projectedValueProperty($blueToothType) public var blueToothType: GizwitsiOSSDK.BlueToothType {
+  @Combine.Published @_projectedValueProperty($blueToothType) public var blueToothType: GizwitsiOSSDK.BlueToothType {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -461,7 +458,7 @@ public protocol GizBleProfileProvider : GizwitsiOSSDK.GizBaseProfileProvider {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published<GizwitsiOSSDK.BlueToothVersion> @_projectedValueProperty($blueToothVersion) public var blueToothVersion: GizwitsiOSSDK.BlueToothVersion {
+  @Combine.Published @_projectedValueProperty($blueToothVersion) public var blueToothVersion: GizwitsiOSSDK.BlueToothVersion {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -1210,7 +1207,7 @@ public enum GizAuth2AccountType : Swift.Int {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class GizUserModel : GizwitsiOSSDK.GizUserProfile, Foundation.ObservableObject {
-  @Combine.Published<Swift.String?> @_projectedValueProperty($uid) public var uid: Swift.String? {
+  @Combine.Published @_projectedValueProperty($uid) public var uid: Swift.String? {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -1222,7 +1219,7 @@ public enum GizAuth2AccountType : Swift.Int {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published<Swift.String?> @_projectedValueProperty($token) public var token: Swift.String? {
+  @Combine.Published @_projectedValueProperty($token) public var token: Swift.String? {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -1321,7 +1318,7 @@ extension Foundation.Data {
 }
 @_hasMissingDesignatedInitializers public class GizSDKManager : Foundation.ObservableObject {
   public var isInit: Swift.Bool
-  @Combine.Published<[GizwitsiOSSDK.GizDevice]> @_projectedValueProperty($devices) public var devices: [GizwitsiOSSDK.GizDevice] {
+  @Combine.Published @_projectedValueProperty($devices) public var devices: [GizwitsiOSSDK.GizDevice] {
     get
   }
   public var $devices: Combine.Published<[GizwitsiOSSDK.GizDevice]>.Publisher {
@@ -1485,7 +1482,7 @@ public protocol GizSdkEventHandlerDelegate {
   func onDeviceBindState(did: Swift.String, isBind: Swift.Bool)
 }
 @_hasMissingDesignatedInitializers public class GizDevice : GizwitsiOSSDK.GizBaseProfile {
-  @Combine.Published<GizwitsiOSSDK.GizBleCapability> @_projectedValueProperty($bleCapability) public var bleCapability: GizwitsiOSSDK.GizBleCapability {
+  @Combine.Published @_projectedValueProperty($bleCapability) public var bleCapability: GizwitsiOSSDK.GizBleCapability {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -1497,7 +1494,7 @@ public protocol GizSdkEventHandlerDelegate {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published<GizwitsiOSSDK.GizMQTTCapability> @_projectedValueProperty($mqttCapability) public var mqttCapability: GizwitsiOSSDK.GizMQTTCapability {
+  @Combine.Published @_projectedValueProperty($mqttCapability) public var mqttCapability: GizwitsiOSSDK.GizMQTTCapability {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
@@ -1509,7 +1506,7 @@ public protocol GizSdkEventHandlerDelegate {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
-  @Combine.Published<GizwitsiOSSDK.GizLanCapability> @_projectedValueProperty($lanCapability) public var lanCapability: GizwitsiOSSDK.GizLanCapability {
+  @Combine.Published @_projectedValueProperty($lanCapability) public var lanCapability: GizwitsiOSSDK.GizLanCapability {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     set
