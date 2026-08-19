@@ -55349,168 +55349,168 @@
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "IntegerLiteral",
-      "offset": 959,
+      "offset": 2023,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "StringLiteral",
-      "offset": 999,
+      "offset": 2067,
       "length": 6,
       "value": "\"enum\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "StringLiteral",
-      "offset": 1289,
+      "offset": 2377,
       "length": 8,
       "value": "\"binary\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "StringLiteral",
-      "offset": 1790,
+      "offset": 2918,
       "length": 29,
       "value": "\"parse binary datapoint fail\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "StringLiteral",
-      "offset": 1878,
+      "offset": 3018,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "StringLiteral",
-      "offset": 1981,
+      "offset": 3121,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "StringLiteral",
-      "offset": 2048,
+      "offset": 3196,
       "length": 4,
       "value": "\"{}\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "StringLiteral",
-      "offset": 2179,
+      "offset": 3339,
       "length": 55,
       "value": "\"数据点转换失败：\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "StringLiteral",
-      "offset": 2233,
+      "offset": 3393,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "StringLiteral",
-      "offset": 2299,
+      "offset": 3459,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "IntegerLiteral",
-      "offset": 2426,
+      "offset": 3598,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "IntegerLiteral",
-      "offset": 2455,
+      "offset": 3631,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "IntegerLiteral",
-      "offset": 2545,
+      "offset": 3725,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "IntegerLiteral",
-      "offset": 2736,
+      "offset": 3955,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "StringLiteral",
-      "offset": 2913,
+      "offset": 4144,
       "length": 68,
       "value": "\"{\"cmd\": \""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "IntegerLiteral",
-      "offset": 2926,
+      "offset": 4157,
       "length": 6,
       "value": "0x0093"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "StringLiteral",
-      "offset": 2933,
+      "offset": 4164,
       "length": 1,
       "value": "\", \"sn\": \""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "StringLiteral",
-      "offset": 2948,
+      "offset": 4179,
       "length": 1,
       "value": "\", \"data\": \"\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "StringLiteral",
-      "offset": 2977,
+      "offset": 4208,
       "length": 1,
       "value": "\"\"}\""
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "IntegerLiteral",
-      "offset": 3153,
+      "offset": 4392,
       "length": 4,
       "value": "1024"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "IntegerLiteral",
-      "offset": 3190,
+      "offset": 4476,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "IntegerLiteral",
-      "offset": 3223,
+      "offset": 4513,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "IntegerLiteral",
-      "offset": 3468,
+      "offset": 4762,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roc\/Documents\/Code\/Gizwits\/rongwei\/sdk\/iossdk\/GizwitsiOSSDK\/Parse\/P0Parser.swift",
       "kind": "BooleanLiteral",
-      "offset": 3560,
+      "offset": 4858,
       "length": 4,
       "value": "true"
     },
