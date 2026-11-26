@@ -1,11 +1,12 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name GizwitsiOSSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-ios13 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name GizwitsiOSSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import SystemConfiguration.CaptiveNetwork
 import Combine
 import CommonCrypto
 import CoreBluetooth
+import CoreFoundation
 import CoreLocation
 import CoreTelephony
 import Darwin
@@ -27,20 +28,36 @@ public enum GizActivatorException : Swift.Int, Swift.Codable {
   case GIZ_SDK_CONNECTING
   case GIZ_SDK_DEVICE_NOT_READY
   case GIZ_SDK_DISCONNECT_FAILED
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 public protocol ActivatorProfile {
+  #if compiler(>=5.3) && $NonescapableTypes
   var mac: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var did: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var productKey: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var deviceTypes: [Swift.UInt8]? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var apiDomain: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var moduleSoftVer: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var mcuSoftVer: Swift.String? { get }
+  #endif
 }
 public struct GizProductInfoStruct : Swift.Codable {
   public var productKey: Swift.String
@@ -62,7 +79,9 @@ public struct GizConfigStruct : Swift.Codable {
   public var appVersion: Swift.String
   public var productInfos: [GizwitsiOSSDK.GizProductInfoStruct]
   public var serverInfo: GizwitsiOSSDK.GizServerInfoStruct?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(appID: Swift.String, appSecret: Swift.String, productInfos: [GizwitsiOSSDK.GizProductInfoStruct], serverInfo: GizwitsiOSSDK.GizServerInfoStruct?, enableRequestEncryption: Swift.Bool = true, appVersion: Swift.String = "")
+  #endif
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -83,6 +102,7 @@ public struct GizConfigStruct : Swift.Codable {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @Combine.Published @_projectedValueProperty($deviceProfile) public var deviceProfile: GizwitsiOSSDK.GizBaseProfile? {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
@@ -90,11 +110,14 @@ public struct GizConfigStruct : Swift.Codable {
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     _modify
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var $deviceProfile: Combine.Published<GizwitsiOSSDK.GizBaseProfile?>.Publisher {
     get
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
+  #endif
   public var isLogin: Swift.Bool {
     get
     set
@@ -107,29 +130,59 @@ public struct GizConfigStruct : Swift.Codable {
   public var netStatus: GizwitsiOSSDK.GizWifiDeviceNetStatus {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getDeviceInfo() async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.DeviceInfoProfile?, GizwitsiOSSDK.GizCtrlException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getDp(attrs: [Swift.String]?) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizJSON?, GizwitsiOSSDK.GizCtrlException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func connect() async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizConnectException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func disConnect() async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizConnectException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func provideWiFiCredentials(ssid: Swift.String, password: Swift.String, timeout: Swift.Int, processHandler: @escaping (GizwitsiOSSDK.GizWiFiActivatorEvent, GizwitsiOSSDK.GizWiFiActivatorEventDetail?) -> ()) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizBaseProfile?, GizwitsiOSSDK.GizActivatorException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func stopProvideWiFiCredentials() async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizActivatorException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func sendDp(data: GizwitsiOSSDK.GizJSON) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizJSON?, GizwitsiOSSDK.GizCtrlException?>
+  #endif
   public func removeDeviceDataListener(closure: @escaping (_ data: GizwitsiOSSDK.GizJSON) -> Swift.Void)
   public func addDeviceDataListener(closure: @escaping (_ data: GizwitsiOSSDK.GizJSON) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func checkUpdate(firmwareType: GizwitsiOSSDK.GizOTAFirmwareType) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizCheckUpdateResultInfo, GizwitsiOSSDK.GizOTAException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func startUpgrade(firmwareType: GizwitsiOSSDK.GizOTAFirmwareType, progressHandler: @escaping (GizwitsiOSSDK.GizOTAProgressData) -> Swift.Void) async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizOTAException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func cancelUpgrade() async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizOTAException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func queryTimer() async -> GizwitsiOSSDK.GizResult<[GizwitsiOSSDK.GizDeviceLocalTimerItem]?, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func createTimer(data: GizwitsiOSSDK.GizDeviceLocalTimerParams) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizDeviceTimerResult, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func deleteTimer(id: Swift.Int) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizDeleteDeviceTimerResult, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func editTimer(data: GizwitsiOSSDK.GizDeviceLocalTimerParams) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizDeviceTimerResult, GizwitsiOSSDK.GizAPIException?>
+  #endif
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
 public enum AuthenticationMethod : Swift.String {
   case oneProductKey
   case oneKey
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -138,7 +191,9 @@ public enum AuthenticationMethod : Swift.String {
 public enum GizProtocolVersion : Swift.String {
   case V5
   case V2
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -146,20 +201,36 @@ public enum GizProtocolVersion : Swift.String {
 }
 public protocol GizBaseProfileProvider {
   var mac: Swift.String { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var sno: Swift.String? { get set }
+  #endif
   var productKey: Swift.String { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var did: Swift.String? { get }
+  #endif
   var protocolVersion: GizwitsiOSSDK.GizProtocolVersion { get }
   var supportOTA: Swift.Bool { get set }
   var requiresAuthentication: Swift.Bool { get set }
   var authenticationMethod: GizwitsiOSSDK.AuthenticationMethod { get set }
   var supportFuzzyConfig: Swift.Bool { get set }
+  #if compiler(>=5.3) && $NonescapableTypes
   var rootDid: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var moduleSoftVer: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var moduleHardVer: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var configured: Swift.Bool? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var mcuSoftVer: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var mcuHardVer: Swift.String? { get }
+  #endif
   var isBind: Swift.Bool { get }
   var name: Swift.String { get }
 }
@@ -204,12 +275,16 @@ public protocol GizBaseProfileProvider {
   public var remark: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @Combine.Published @_projectedValueProperty($did) public var did: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var $did: Combine.Published<Swift.String?>.Publisher {
     get
   }
+  #endif
   @Combine.Published @_projectedValueProperty($protocolVersion) public var protocolVersion: GizwitsiOSSDK.GizProtocolVersion {
     get
   }
@@ -264,42 +339,66 @@ public protocol GizBaseProfileProvider {
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @Combine.Published @_projectedValueProperty($rootDid) public var rootDid: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var $rootDid: Combine.Published<Swift.String?>.Publisher {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @Combine.Published @_projectedValueProperty($moduleSoftVer) public var moduleSoftVer: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var $moduleSoftVer: Combine.Published<Swift.String?>.Publisher {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @Combine.Published @_projectedValueProperty($moduleHardVer) public var moduleHardVer: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var $moduleHardVer: Combine.Published<Swift.String?>.Publisher {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @Combine.Published @_projectedValueProperty($configured) public var configured: Swift.Bool? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var $configured: Combine.Published<Swift.Bool?>.Publisher {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @Combine.Published @_projectedValueProperty($mcuSoftVer) public var mcuSoftVer: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var $mcuSoftVer: Combine.Published<Swift.String?>.Publisher {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @Combine.Published @_projectedValueProperty($mcuHardVer) public var mcuHardVer: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var $mcuHardVer: Combine.Published<Swift.String?>.Publisher {
     get
   }
+  #endif
   @Combine.Published @_projectedValueProperty($isBind) public var isBind: Swift.Bool {
     get
   }
@@ -308,7 +407,9 @@ public protocol GizBaseProfileProvider {
   }
   public func encode(to encoder: any Swift.Encoder) throws
   public func isSame(device: GizwitsiOSSDK.GizBaseProfile) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getDataPointConfig() async -> GizwitsiOSSDK.DataPointConfig?
+  #endif
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
@@ -351,7 +452,9 @@ public protocol GizMQTTProfileProvider : GizwitsiOSSDK.GizBaseProfileProvider {
   var port: Swift.UInt16 { get }
   var host: Swift.String { get set }
   var isOnline: Swift.Bool { get set }
+  #if compiler(>=5.3) && $NonescapableTypes
   var rootDid: Swift.String? { get }
+  #endif
 }
 @_hasMissingDesignatedInitializers public class GizMqttProfile : GizwitsiOSSDK.GizBaseProfile, Swift.Equatable, GizwitsiOSSDK.GizMQTTProfileProvider {
   @Combine.Published @_projectedValueProperty($host) public var host: Swift.String {
@@ -387,7 +490,9 @@ public enum BlueToothType : Swift.String {
   case Beacon
   case Voice
   case GATT
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -397,7 +502,9 @@ public enum BlueToothVersion : Swift.String {
   case BLE4
   case BLE42
   case BLE50
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -408,7 +515,9 @@ public protocol GizBleProfileProvider : GizwitsiOSSDK.GizBaseProfileProvider {
   var deviceId: Swift.String { get }
   var cTime: Swift.Int { get set }
   var RSSI: Foundation.NSNumber { get set }
+  #if compiler(>=5.3) && $NonescapableTypes
   var peripheral: CoreBluetooth.CBPeripheral? { get set }
+  #endif
   var blueToothType: GizwitsiOSSDK.BlueToothType { get set }
   var blueToothVersion: GizwitsiOSSDK.BlueToothVersion { get set }
 }
@@ -496,7 +605,9 @@ public enum GizOTAException : Swift.Int, Swift.Codable {
   case GIZ_SDK_OTA_DEVICE_BUSY_IN_UPGRADE
   case GIZ_SITE_PRODUCTKEY_INVALID
   case GIZ_SDK_OTA_FIRMWARE_VERSION_TOO_LOW
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -610,7 +721,9 @@ public enum GizAPIException : Swift.Int, Swift.Codable {
   case GIZ_SDK_OTA_CHECK_OR_UPGRADE_IS_RUNNING
   case GIZ_SDK_OTA_CANCEL_OTA_FAILED
   case GIZ_SDK_OTA_DEVICE_ENABLE_NEW_FIRMWARE_FAILED
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -620,7 +733,9 @@ public enum GizTimerSyncStatus : Swift.Int, Swift.Codable {
   case synching
   case success
   case fail
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -661,11 +776,49 @@ public struct GizQueryDeviceTimerResult : GizwitsiOSSDK.GizOpenApiResultInfo {
   @objc deinit
 }
 extension GizwitsiOSSDK.GizUserManager {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func registerWithAccount(username: Swift.String, password: Swift.String) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizLoginResultInfo?, GizwitsiOSSDK.GizAPIException?>
+  #endif
 }
 @_hasMissingDesignatedInitializers public class GizBleCapability : GizwitsiOSSDK.GizBaseCapability {
   override public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
+}
+@_spi(B10Diagnostics) public struct B10LinkDiagnostics {
+  @_spi(B10Diagnostics) public let mode: Swift.String
+  @_spi(B10Diagnostics) public let version: Swift.String
+  @_spi(B10Diagnostics) public let maximumWriteLength: Swift.Int
+}
+extension GizwitsiOSSDK.GizBleCapability {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(B10Diagnostics) @_Concurrency.MainActor public func b10LinkDiagnostics() -> GizwitsiOSSDK.B10LinkDiagnostics?
+  #endif
+}
+@_spi(B10Diagnostics) public enum B10DiagnosticCommand : Swift.UInt8, Swift.CaseIterable {
+  @_spi(B10Diagnostics) case mode
+  @_spi(B10Diagnostics) case product
+  @_spi(B10Diagnostics) case version
+  @_spi(B10Diagnostics) case battery
+  @_spi(B10Diagnostics) case workParameters
+  @_spi(B10Diagnostics) case name
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_spi(B10Diagnostics) public init?(rawValue: Swift.UInt8)
+  #endif
+  @_spi(B10Diagnostics) public typealias AllCases = [GizwitsiOSSDK.B10DiagnosticCommand]
+  @_spi(B10Diagnostics) public typealias RawValue = Swift.UInt8
+  @_spi(B10Diagnostics) nonisolated public static var allCases: [GizwitsiOSSDK.B10DiagnosticCommand] {
+    @_spi(B10Diagnostics) get
+  }
+  @_spi(B10Diagnostics) public var rawValue: Swift.UInt8 {
+    @_spi(B10Diagnostics) get
+  }
+}
+extension GizwitsiOSSDK.GizBleCapability {
+  @_spi(B10Diagnostics) @_Concurrency.MainActor public func readB10Diagnostic(_ command: GizwitsiOSSDK.B10DiagnosticCommand, trace: @escaping (Swift.Bool, Foundation.Data) -> Swift.Void) async throws -> Swift.String
+}
+extension GizwitsiOSSDK.GizBleCapability {
+  @_spi(B10Diagnostics) @_Concurrency.MainActor public func observeB10IdleNotifications(_ observer: @escaping (Foundation.Data) -> Swift.Void) async throws
+  @_spi(B10Diagnostics) public static func previewB10Cleaning(_ data: GizwitsiOSSDK.GizJSON) throws -> Foundation.Data
 }
 public enum GizJSONError : Swift.Int, Swift.Error {
   case unsupportedType
@@ -674,7 +827,9 @@ public enum GizJSONError : Swift.Int, Swift.Error {
   case wrongType
   case notExist
   case invalidJSON
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -699,7 +854,9 @@ public enum Type : Swift.Int {
   case dictionary
   case null
   case unknown
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -812,13 +969,19 @@ extension GizwitsiOSSDK.GizJSON : Swift.ExpressibleByArrayLiteral {
   public typealias ArrayLiteralElement = Any
 }
 extension GizwitsiOSSDK.GizJSON : Swift.RawRepresentable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Any)
+  #endif
   public var rawValue: Any {
     get
   }
   public func rawData(options opt: Foundation.JSONSerialization.WritingOptions = JSONSerialization.WritingOptions(rawValue: 0)) throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func rawString(_ encoding: Swift.String.Encoding = .utf8, options opt: Foundation.JSONSerialization.WritingOptions = .prettyPrinted) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func rawString(_ options: [GizwitsiOSSDK.writingOptionsKeys : Any]) -> Swift.String?
+  #endif
   public typealias RawValue = Any
 }
 extension GizwitsiOSSDK.GizJSON : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
@@ -830,165 +993,207 @@ extension GizwitsiOSSDK.GizJSON : Swift.CustomStringConvertible, Swift.CustomDeb
   }
 }
 extension GizwitsiOSSDK.GizJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var array: [GizwitsiOSSDK.GizJSON]? {
     get
   }
+  #endif
   public var arrayValue: [GizwitsiOSSDK.GizJSON] {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var arrayObject: [Any]? {
     get
     set
   }
+  #endif
 }
 extension GizwitsiOSSDK.GizJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var dictionary: [Swift.String : GizwitsiOSSDK.GizJSON]? {
     get
   }
+  #endif
   public var dictionaryValue: [Swift.String : GizwitsiOSSDK.GizJSON] {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var dictionaryObject: [Swift.String : Any]? {
     get
     set
   }
+  #endif
 }
 extension GizwitsiOSSDK.GizJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var bool: Swift.Bool? {
     get
     set
   }
+  #endif
   public var boolValue: Swift.Bool {
     get
     set
   }
 }
 extension GizwitsiOSSDK.GizJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var string: Swift.String? {
     get
     set
   }
+  #endif
   public var stringValue: Swift.String {
     get
     set
   }
 }
 extension GizwitsiOSSDK.GizJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var number: Foundation.NSNumber? {
     get
     set
   }
+  #endif
   public var numberValue: Foundation.NSNumber {
     get
     set
   }
 }
 extension GizwitsiOSSDK.GizJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var null: Foundation.NSNull? {
     get
     set
   }
+  #endif
   public func exists() -> Swift.Bool
 }
 extension GizwitsiOSSDK.GizJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var url: Foundation.URL? {
     get
     set
   }
+  #endif
 }
 extension GizwitsiOSSDK.GizJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var double: Swift.Double? {
     get
     set
   }
+  #endif
   public var doubleValue: Swift.Double {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var float: Swift.Float? {
     get
     set
   }
+  #endif
   public var floatValue: Swift.Float {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var int: Swift.Int? {
     get
     set
   }
+  #endif
   public var intValue: Swift.Int {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var uInt: Swift.UInt? {
     get
     set
   }
+  #endif
   public var uIntValue: Swift.UInt {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var int8: Swift.Int8? {
     get
     set
   }
+  #endif
   public var int8Value: Swift.Int8 {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var uInt8: Swift.UInt8? {
     get
     set
   }
+  #endif
   public var uInt8Value: Swift.UInt8 {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var int16: Swift.Int16? {
     get
     set
   }
+  #endif
   public var int16Value: Swift.Int16 {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var uInt16: Swift.UInt16? {
     get
     set
   }
+  #endif
   public var uInt16Value: Swift.UInt16 {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var int32: Swift.Int32? {
     get
     set
   }
+  #endif
   public var int32Value: Swift.Int32 {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var uInt32: Swift.UInt32? {
     get
     set
   }
+  #endif
   public var uInt32Value: Swift.UInt32 {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var int64: Swift.Int64? {
     get
     set
   }
+  #endif
   public var int64Value: Swift.Int64 {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var uInt64: Swift.UInt64? {
     get
     set
   }
+  #endif
   public var uInt64Value: Swift.UInt64 {
     get
     set
@@ -1022,7 +1227,9 @@ public enum GizWiFiActivatorEvent : Swift.String, Swift.Decodable, Swift.Encodab
   case GIZ_CONFIG_RECV_SUCCESS
   case GIZ_ROUTER_CONNECT_RESULT
   case GIZ_CONFIG_SUCCESS
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1031,7 +1238,9 @@ public enum GizWiFiActivatorEvent : Swift.String, Swift.Decodable, Swift.Encodab
 public struct GizWiFiActivatorEventDetail : Swift.Codable {
   public var code: Swift.Int?
   public var message: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(code: Swift.Int? = nil, message: Swift.String? = nil)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -1102,7 +1311,9 @@ public enum GizWiFiErrorReason : Swift.Int, Swift.Codable {
   public var userFriendlyMessage: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1113,7 +1324,9 @@ public enum GizWifiDeviceNetStatus : Swift.Int, Swift.Decodable, Swift.Encodable
   case GizDeviceOnline
   case GizDeviceControlled
   case GizDeviceUnavailable
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1122,7 +1335,9 @@ public enum GizWifiDeviceNetStatus : Swift.Int, Swift.Decodable, Swift.Encodable
 public enum GizOTAFirmwareType : Swift.String, Swift.Decodable, Swift.Encodable {
   case GizOTAFirmareModule
   case GizOTAFirmareMcu
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1132,7 +1347,9 @@ public enum GizCapability : Swift.String, Swift.Decodable, Swift.Encodable {
   case GizBleCapability
   case GizLanCapability
   case GizMQTTCapability
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1148,12 +1365,24 @@ public struct RegisterDeviceInfo : Swift.Codable {
 @preconcurrency public protocol _SwiftLogSendableLogHandler : Swift.Sendable {
 }
 extension GizwitsiOSSDK.GizUserManager {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func loginWithAccount(username: Swift.String, password: Swift.String) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizLoginResultInfo?, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func sendMobileLoginVerifyCode(phoneCode: Swift.String, phone: Swift.String, lang: Swift.String?) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizVerifyCodeResultInfo?, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func loginWithMobile(phoneCode: Swift.String, phone: Swift.String, code: Swift.String) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizLoginResultInfo?, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func loginWithEmail(email: Swift.String, code: Swift.String) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizLoginResultInfo?, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func sendEmailLoginVerifyCode(email: Swift.String, lang: Swift.String?) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizVerifyCodeResultInfo?, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func loginByAnonymous() async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizLoginResultInfo?, GizwitsiOSSDK.GizAPIException?>
+  #endif
 }
 open class GizResult<T, U> : Swift.Encodable where T : Swift.Encodable, U : Swift.Encodable {
   public var message: Swift.String? {
@@ -1168,13 +1397,25 @@ open class GizResult<T, U> : Swift.Encodable where T : Swift.Encodable, U : Swif
   public var error: U? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(message: Swift.String?, data: T?, error: U?, success: Swift.Bool)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(message: Swift.String?, data: T?, success: Swift.Bool)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(data: T?, success: Swift.Bool)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(successMessage: Swift.String?, data: T?)
+  #endif
   convenience public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(error: U?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(error: U?, message: Swift.String)
+  #endif
   @objc deinit
   open func encode(to encoder: any Swift.Encoder) throws
 }
@@ -1182,7 +1423,9 @@ public enum GizUserGenderType : Swift.Int {
   case GizUserGenderMale
   case GizUserGenderFemale
   case GizUserGenderUnknown
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1191,7 +1434,9 @@ public enum GizUserGenderType : Swift.Int {
 public enum GizAuth2AccountType : Swift.Int {
   case GizThirdGoogle
   case GizThirdApple
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1210,6 +1455,7 @@ public enum GizAuth2AccountType : Swift.Int {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class GizUserModel : GizwitsiOSSDK.GizUserProfile, Foundation.ObservableObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @Combine.Published @_projectedValueProperty($uid) public var uid: Swift.String? {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
@@ -1217,11 +1463,15 @@ public enum GizAuth2AccountType : Swift.Int {
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     _modify
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var $uid: Combine.Published<Swift.String?>.Publisher {
     get
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @Combine.Published @_projectedValueProperty($token) public var token: Swift.String? {
     get
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
@@ -1229,26 +1479,49 @@ public enum GizAuth2AccountType : Swift.Int {
     @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
     _modify
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var $token: Combine.Published<Swift.String?>.Publisher {
     get
     @available(iOS 14.0, tvOS 14.0, watchOS 7.0, macOS 11.0, *)
     set
   }
+  #endif
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class GizUserManager : GizwitsiOSSDK.GizUserModel {
   public static let sharedInstance: GizwitsiOSSDK.GizUserManager
+  #if compiler(>=5.3) && $NonescapableTypes
   public func sendVerifyMobileCodeWithPhone(phone: Swift.String, countryCode: Swift.Int) async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func resetPasswordByPhone(phone: Swift.String, newPassword: Swift.String, code: Swift.String) async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func resetPasswordByEmail(email: Swift.String) async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func resetPasswordWithOldPassword(oldPassWord: Swift.String, newPassWord: Swift.String) async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func transAnonymousUserToEmailUser(email: Swift.String, password: Swift.String) async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func transAnonymousUserToPhoneUser(phone: Swift.String, password: Swift.String, code: Swift.String) async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func transAnonymousUserToNormalUser(username: Swift.String, password: Swift.String) async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func logout() async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func changeUserInfo(info: GizwitsiOSSDK.GizUserProfile) async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getUserInfo() async -> GizwitsiOSSDK.GizResult<Swift.Int?, GizwitsiOSSDK.GizAPIException?>
+  #endif
   public func getAuthorizeData() -> GizwitsiOSSDK.GizLoginResultInfo
   public func updateAuthorizeData(token: Swift.String, uid: Swift.String)
   @objc deinit
@@ -1277,7 +1550,9 @@ public enum GizMQTTException : Swift.Int, Swift.Codable {
   case GIZ_MQTT_SESSION_NO_CONNECTED
   case GIZ_MQTT_SESSION_PUBLISH_DATA_TO_DEVICE_FAIL
   case GIZ_MQTT_UNKNOW_ERROR
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1298,10 +1573,14 @@ public struct DeviceInfoProfile : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 extension Swift.StringProtocol {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func toPointer() -> Swift.UnsafePointer<Swift.UInt8>?
+  #endif
 }
 extension Foundation.Data {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(hex: Swift.String)
+  #endif
   public struct HexEncodingOptions : Swift.OptionSet {
     public init(rawValue: Swift.Int)
     public let rawValue: Swift.Int
@@ -1330,7 +1609,9 @@ extension Foundation.Data {
   public static let sharedInstance: GizwitsiOSSDK.GizSDKManager
   public func feedback(uploadLog: Swift.Bool, contact: Swift.String, content: Swift.String) async
   public func initSDK(config: GizwitsiOSSDK.GizConfigStruct)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getProductDataPointConfig(productKey: Swift.String) async -> Swift.String?
+  #endif
   public func startBleScan()
   public func stopBleScan()
   public func setDelegate(delegate: any GizwitsiOSSDK.GizSdkEventHandlerDelegate)
@@ -1347,8 +1628,12 @@ extension GizwitsiOSSDK.GizSDKManager {
 @_hasMissingDesignatedInitializers public class ProductManager {
   public static let sharedInstance: GizwitsiOSSDK.ProductManager
   public func initWithDomain(domain: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getConfig(productKey: Swift.String) async -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getConfigStruct(productKey: Swift.String) async -> GizwitsiOSSDK.DataPointConfig?
+  #endif
   @objc deinit
 }
 public struct DataPointPosition : Swift.Codable {
@@ -1472,7 +1757,9 @@ public enum GizCtrlException : Swift.Int, Swift.Codable {
   case GIZ_SDK_DEVICE_CONTROL_FAILED
   case GIZ_SDK_DATAPOINT_PARSE_FAILED
   case GIZ_SDK_DEVICE_NOT_READY
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1522,11 +1809,21 @@ public protocol GizSdkEventHandlerDelegate {
     set
   }
   override public func encode(to encoder: any Swift.Encoder) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(bleDevice: GizwitsiOSSDK.GizBleProfile?, lanDevice: GizwitsiOSSDK.GizLanProfile?, mqttDevice: GizwitsiOSSDK.GizMqttProfile?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func register() async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizRegisterDeviceResultInfo, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func updateDeviceInfo(alias: Swift.String?, remark: Swift.String?) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizUpdateDeviceResultInfo, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func bind(alias: Swift.String?, remark: Swift.String?) async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizBindDeviceResultInfo, GizwitsiOSSDK.GizAPIException?>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func unBind() async -> GizwitsiOSSDK.GizResult<GizwitsiOSSDK.GizUnBindDeviceResultInfo, GizwitsiOSSDK.GizAPIException?>
+  #endif
   @objc deinit
 }
 public enum GizConnectException : Swift.Int, Swift.Codable {
@@ -1535,7 +1832,9 @@ public enum GizConnectException : Swift.Int, Swift.Codable {
   case GIZ_SDK_DEVICE_NOT_READY
   case GIZ_SDK_DISCONNECT_FAILED
   case GIZ_SDK_BLE_PARAM_UUID_INFO_REQUIRED
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1552,7 +1851,9 @@ public enum GizOTAEvent : Swift.String, Swift.Encodable {
   case GizOTAEventTransferring
   case GizOTAEventVerification
   case GizOTAEventFinish
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1562,7 +1863,9 @@ public protocol GizOpenApiResultInfo : Swift.Decodable, Swift.Encodable {
   init(_: Swift.Dictionary<Swift.String, Any>)
 }
 @_inheritsConvenienceInitializers public class GizOpenApiResult<T> : GizwitsiOSSDK.GizResult<T, GizwitsiOSSDK.GizAPIException?> where T : GizwitsiOSSDK.GizOpenApiResultInfo {
+  #if compiler(>=5.3) && $NonescapableTypes
   override public init(message: Swift.String?, data: T?, error: GizwitsiOSSDK.GizAPIException??, success: Swift.Bool)
+  #endif
   @objc deinit
 }
 public struct GizOpenApiErrorInfo : GizwitsiOSSDK.GizOpenApiResultInfo {
@@ -1673,6 +1976,9 @@ extension GizwitsiOSSDK.GizAPIException : Swift.RawRepresentable {}
 extension GizwitsiOSSDK.GizTimerSyncStatus : Swift.Equatable {}
 extension GizwitsiOSSDK.GizTimerSyncStatus : Swift.Hashable {}
 extension GizwitsiOSSDK.GizTimerSyncStatus : Swift.RawRepresentable {}
+@_spi(B10Diagnostics) extension GizwitsiOSSDK.B10DiagnosticCommand : Swift.Equatable {}
+@_spi(B10Diagnostics) extension GizwitsiOSSDK.B10DiagnosticCommand : Swift.Hashable {}
+@_spi(B10Diagnostics) extension GizwitsiOSSDK.B10DiagnosticCommand : Swift.RawRepresentable {}
 extension GizwitsiOSSDK.GizJSONError : Swift.Equatable {}
 extension GizwitsiOSSDK.GizJSONError : Swift.Hashable {}
 extension GizwitsiOSSDK.GizJSONError : Swift.RawRepresentable {}
